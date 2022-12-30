@@ -30,6 +30,7 @@ public class LinkTextPractice {
             System.out.println("FAILED!!!");
         }
         //  go back to home page by using .back()
+        driver.navigate().back();
         //  verify title equals
         //  expected :Practice
 
