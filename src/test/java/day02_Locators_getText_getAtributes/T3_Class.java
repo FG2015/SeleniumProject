@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T3_Class {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 /*
 task----Google Search
 Open a chrome browser
@@ -20,13 +20,16 @@ verify title
 Expected: title should start with "apple" word
  */
 
-            WebDriverManager.chromedriver().setup();
-            WebDriver driver= new ChromeDriver();
-            driver.manage().window().maximize();
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
 
-            driver.get("https://www.google.com");
-            WebElement googleSearchBox =driver.findElement(By.name("q"));
-            googleSearchBox.sendKeys("apple"+ Keys.ENTER);
+        driver.get("https://www.google.com");
+        WebElement googleSearchBox = driver.findElement(By.name("q"));
+        googleSearchBox.sendKeys("apple" + Keys.ENTER);
+        Thread.sleep(3000);
 
 
-        }
+
+    }
+}
