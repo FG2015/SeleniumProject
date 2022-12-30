@@ -2,7 +2,6 @@ package day02_Locators_getText_getAtributes;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,7 +26,7 @@ Expected: title should start with "apple" word
 
         driver.get("https://www.google.com");
         WebElement googleSearchBox =driver.findElement(By.name("q"));
-        googleSearchBox.sendKeys("apple"+ Keys.ENTER);
+        googleSearchBox.sendKeys("apple");
 
 
 
