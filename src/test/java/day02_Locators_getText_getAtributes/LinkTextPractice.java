@@ -32,7 +32,11 @@ public class LinkTextPractice {
         //  go back to home page by using .back()
         driver.navigate().back();
         //  verify title equals
+
         //  expected :Practice
+        expectedTitle="Practice";
+        actualTitle=driver.getTitle();
+
 
 
 
