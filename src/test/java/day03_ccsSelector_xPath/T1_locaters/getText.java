@@ -19,10 +19,14 @@ public class getText {
         inputPassword.sendKeys("incorrect");
         WebElement loginButton= driver.findElement(By.className("login-btn"));
         loginButton.click();
-
-
-
-
+        WebElement errorMessage = driver.findElement(By.className("errortext"));
+         String expectedErrorMessage= "Invalid name or Password";
+         String actualErrorMessage=errorMessage.getText();
+         if(actualErrorMessage.equals(expectedErrorMessage)){
+             System.out.println("Error Message verification PASSED!");
+         }else {
+             System.out.println("Error Message verification FAILED");
+         }
 
 
     }
