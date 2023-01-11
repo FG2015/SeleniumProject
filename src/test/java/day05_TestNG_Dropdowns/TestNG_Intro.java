@@ -7,5 +7,6 @@ public class TestNG_Intro {
     public void Test1(){
         System.out.println("TEst 1 is running ");
 
+
     }
 }
