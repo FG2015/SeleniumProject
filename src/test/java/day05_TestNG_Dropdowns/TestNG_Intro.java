@@ -9,4 +9,10 @@ public class TestNG_Intro {
 
 
     }
+
+    @Test
+    public void Test2(){
+        System.out.println("Test 2 is running");
+    }
+
 }
