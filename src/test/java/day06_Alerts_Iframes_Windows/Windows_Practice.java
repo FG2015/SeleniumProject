@@ -32,7 +32,7 @@ public class Windows_Practice {
 
         for (String each: driver.getWindowHandles()) {
             driver.switchTo().window(each);
-            System.out.println("Title after clcik"+driver.getTitle());
+            System.out.println("Title after click"+driver.getTitle());
         }
 
 
