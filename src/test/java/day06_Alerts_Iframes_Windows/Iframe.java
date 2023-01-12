@@ -22,5 +22,14 @@ public class Iframe {
 
         WebElement YourContentGoesHere= driver.findElement(By.xpath("//p"));
         Assert.assertTrue(YourContentGoesHere.isDisplayed());
+
+        //verify "An iFrame containing the TinyMCE WYSIWYG Editor"
+        // to be able to verify header we must be back to main HTML
+
+        driver.switchTo().parentFrame();
+        WebElement header= driver.findElement(By.xpath("//h3"));
+        Assert.assertTrue(header.isDisplayed());
+
+
     }
 }
