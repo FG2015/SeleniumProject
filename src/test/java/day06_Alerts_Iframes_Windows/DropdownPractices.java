@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -24,6 +25,11 @@ public class DropdownPractices {
         stateDropDown.selectByVisibleText("Illinois");
         stateDropDown.selectByValue("VA");
         stateDropDown.selectByIndex(5);
+
+
+        String expectedOptionText= "California";
+        String actualOptionText= stateDropDown.getFirstSelectedOption().getText();
+        Assert.assertEquals(actualOptionText,expectedOptionText);
 
 
     }
