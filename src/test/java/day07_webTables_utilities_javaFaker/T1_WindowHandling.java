@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import utilities.BrowserUtils;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -34,6 +35,7 @@ public class T1_WindowHandling {
         }
 
 
+        BrowserUtils.switchWindowAndVerify(driver,"facebook");
     }
 
 
