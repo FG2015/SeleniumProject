@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import utilities.CRM_utilities;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,6 +18,12 @@ public class CRM_Login {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://login1.nextbasecrm.com");
+
+
+        CRM_utilities.crm_login(driver);
+
+
+
 
         WebElement loginBox= driver.findElement(By.cssSelector("input[class='login-inp']"));
         loginBox.sendKeys("feridguluzade@gmail.com");
