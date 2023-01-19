@@ -15,5 +15,8 @@ public class CRM_utilities {
         WebElement loginButton=driver.findElement(By.xpath("//input[@value='Log In']"));
         loginBox.click();
 
+
+        CRM_utilities.crm_login(driver);
+
     }
 }
