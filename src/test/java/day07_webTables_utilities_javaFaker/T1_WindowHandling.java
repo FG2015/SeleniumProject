@@ -28,6 +28,9 @@ public class T1_WindowHandling {
 
 
             System.out.println("current URL:"+ driver.getCurrentUrl());
+            if (driver.getCurrentUrl().contains("facebook")){
+                break;
+            }
         }
 
 
