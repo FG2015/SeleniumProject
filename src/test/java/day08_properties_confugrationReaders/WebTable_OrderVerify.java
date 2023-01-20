@@ -46,11 +46,14 @@ public WebDriver driver;
 
     @Test
     public  void orderVerifyTest2(){
-        String customerOrderDate1= WebTablesUtils.returnOrderDate( driver,"Alexandra Gray");
+        String customerOrderDate1= WebTablesUtils.returnOrderDate(driver,"Alexandra Gray");
         System.out.println("customerOrderDate1 = " + customerOrderDate1);
     }
 
-
+@Test
+    public void  orderVerify3(){
+        WebTablesUtils.orderVerify(driver,"Bart Fisher","01/16/2021");
+}
 
 
 }
