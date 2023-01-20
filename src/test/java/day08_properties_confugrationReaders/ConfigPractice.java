@@ -22,8 +22,9 @@ public class ConfigPractice {
     }
 
     @Test
-    public void google_search_test(){
+    public void google_search_test() throws InterruptedException {
         WebElement googleSearchBox= driver.findElement(By.cssSelector("input[class='gLFyf']"));
+        Thread.sleep(1000);
         googleSearchBox.sendKeys("apple"+ Keys.ENTER);
     }
 
