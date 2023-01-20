@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.WebDriverFactories;
+import utilities.WebTablesUtils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -41,4 +42,13 @@ public WebDriver driver;
         Assert.assertEquals(actualBobName,expectedBobName);
 
     }
+
+
+    @Test
+    public  void orderVerifyTest2(){
+        String customerOrderDate1= WebTablesUtils.returnOrderDate( driver,"Alexandra Gray");
+        System.out.println("customerOrderDate1 = " + customerOrderDate1);
+    }
+
+
 }
