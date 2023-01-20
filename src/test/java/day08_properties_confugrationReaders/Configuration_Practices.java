@@ -38,6 +38,7 @@ public class Configuration_Practices {
 
 
 
+
          //  WebElement googleSearchBox= driver.findElement(By.cssSelector("input[class='gLFyf']"));
         //googleSearchBox.sendKeys("apple"+ Keys.ENTER);
 
