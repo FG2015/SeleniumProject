@@ -22,4 +22,7 @@ public class Configuration_Reader {
        }
 
    }
+   public  static  String getProperty(String keyword){
+       return properties.getProperty(keyword)
+   }
 }
