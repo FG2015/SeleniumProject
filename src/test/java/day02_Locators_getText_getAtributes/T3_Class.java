@@ -26,8 +26,8 @@ Expected: title should start with "apple" word
 
         driver.get("https://www.google.com");
         WebElement googleSearchBox = driver.findElement(By.name("q"));
-        googleSearchBox.sendKeys("apple" + Keys.ENTER);
-        Thread.sleep(3000);
+        googleSearchBox.sendKeys("amazon" + Keys.ENTER);
+        Thread.sleep(5000);
 
 
 
