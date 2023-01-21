@@ -24,7 +24,12 @@ Expected: title should start with "apple" word
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
+
         driver.get("https://www.google.com");
+
+
+       driver.findElement(By.id("L2AGLb")).click();
+
         WebElement googleSearchBox = driver.findElement(By.name("q"));
         googleSearchBox.sendKeys("amazon" + Keys.ENTER);
         Thread.sleep(5000);
