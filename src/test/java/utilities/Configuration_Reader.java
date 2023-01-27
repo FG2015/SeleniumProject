@@ -5,24 +5,34 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Configuration_Reader {
-    private static  Properties properties=new Properties();
 
-   static {
+    //1- Create the object of Properties
+    private static Properties properties = new Properties();
 
-       try {
-           Properties properties=new Properties();
+    static{
 
-           FileInputStream file=new FileInputStream("configuration.properties");
-           properties.load(file);
+        try {
 
-           file.close();
+            //2- We need to open the file in java memory: FileInputStream
+            FileInputStream file = new FileInputStream("configuration.properties");
 
-       } catch (IOException e) {
-           System.out.println("file not found in the configurationReader class");
-       }
+            //3- Load the properties object using FileInputStream object
+            properties.load(file);
 
-   }
-   public  static  String getProperty(String keyword){
-       return properties.getProperty(keyword);
-   }
+            //close the file
+            file.close();
+
+
+        } catch (IOException e) {
+            System.out.println("File not found in the ConfigurationReader class.");
+            e.printStackTrace();
+        }
+
+    }
+
+    public static String getProperty(String keyword){
+        return properties.getProperty(keyword);
+    }
+
+
 }
