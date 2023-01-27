@@ -21,12 +21,12 @@ public class Driver {
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     driver.manage().window().maximize();
                     break;
-                case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
-                    driver= new ChromeDriver();
-                    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                    driver.manage().window().maximize();
-                    break;
+                //case "firefox":
+                  //  WebDriverManager.firefoxdriver().setup();
+                  //  driver= new ChromeDriver();
+                    //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                    //driver.manage().window().maximize();
+                    //break;
 
             }
         }
