@@ -15,6 +15,9 @@ public class Upload_Practice {
         WebElement chooseFile=Driver.getDriver().findElement(By.id("file-upload"));
         chooseFile.sendKeys(path);
 
+        WebElement uploadButton=Driver.getDriver().findElement(By.id("file-submit"));
+        uploadButton.click();
+
 
     }
 }
