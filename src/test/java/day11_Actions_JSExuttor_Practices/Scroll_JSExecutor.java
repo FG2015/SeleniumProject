@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import utilities.BrowserUtils;
 import utilities.Driver;
 
 public class Scroll_JSExecutor {
@@ -17,6 +18,8 @@ public class Scroll_JSExecutor {
 
         JavascriptExecutor js=(JavascriptExecutor)Driver.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true)",cydeoLink);
+        BrowserUtils.sleep(2);
+        js.executeScript("arguments[1].scrollIntoView(true)", cydeoLink, homeLink);
 
 
     }
