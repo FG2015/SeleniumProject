@@ -19,4 +19,7 @@ public class Actions_Practices {
 
         actions.sendKeys(Keys.PAGE_UP).perform();
     }
+
+
+
 }
