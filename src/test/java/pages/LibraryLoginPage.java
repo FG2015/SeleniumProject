@@ -20,6 +20,16 @@ public class LibraryLoginPage {
     @FindBy(xpath = "//button[.='Sign in']")
     public WebElement signInButton;
 
+    @FindBy(xpath = "//div[@class='alert alert-danger']")
+    public WebElement fieldRequestErrorMsj;
+
+    @FindBy(xpath = "//div[.='Please enter a valid email address']/div")
+    public WebElement enterValidEmailErrorMsj;
+
+
+    @FindBy(xpath = "//div[.='Sorry, Wrong Email or Password']")
+    public WebElement wrongEmailOrPasswordMsj;
+
 
 
 
